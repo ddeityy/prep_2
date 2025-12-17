@@ -276,6 +276,10 @@
 
 ## Базы данных
 
+**DELETE:** is basically a row level operation. A DELETE statement will mark every row matching the WHERE-clause as deleted. In the case of billions of rows, this takes a relatively long time.
+
+**TRUNCATE:** is basically a table operation. Instead of touching each row separately, it will simply empty the entire table and start a new data file.
+
 ### EXPLAIN ANALYZE
 
 * Общее время выполение запроса
